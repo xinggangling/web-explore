@@ -1,0 +1,21 @@
+{
+  "name": "react-pro",
+  "version": "1.0.0",
+  "description": "react-pro",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.3.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
