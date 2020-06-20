@@ -3,6 +3,10 @@ class Router {
         this.hashRoute();
     }
 
+    /**
+     * @description 测试
+     * @memberof Router
+     */
     hashRoute = () => {
 
     }

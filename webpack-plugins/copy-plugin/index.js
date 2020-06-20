@@ -9,7 +9,7 @@ class CopyPlugin {
             compilation.hooks.additionalAssets.tapAsync(
                 'CopyPlugin',
                 cb => {
-
+                    console.log('-----------------------------')
                 }
             );
         });
