@@ -2,3 +2,4 @@
 */dist/
 node_modules/
 dist/
+./react-pro/package-lock.json
