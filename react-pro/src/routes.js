@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { AsyncLoader } from './components/index';
 
-import Home from './pages/home';
+import Loading from './components/Loading';
+
+const Home = React.lazy(() => import('./pages/home'));
 
 export default class Routes extends React.Component {
     render() {
