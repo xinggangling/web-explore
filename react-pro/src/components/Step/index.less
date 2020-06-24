@@ -1,0 +1,52 @@
+.steps-wrap {
+    .steps {
+        display: flex;
+    }
+
+    .step {
+        flex: 1;
+        text-align: center;
+        outline: none;
+        position: relative;
+        font-size: 12px;
+
+        .icon {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .line {
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            width: 100%;
+            padding: 0;
+        }
+
+        .line:not(:last-child)::after {
+            content: '';
+            display: inline-block;
+            width: calc(100% - 40px);
+            height: 2px;
+            background-color: #fff;
+        }
+
+        .gray-line:not(:last-child)::after {
+            background-color: #D8D8D8;
+        }
+
+        .content {
+            color: #fff;
+        }
+
+        .gray-content {
+            color: #D8D8D8;
+        }
+    }
+
+    .step:last-child > .line {
+        display: none;
+    }
+}
