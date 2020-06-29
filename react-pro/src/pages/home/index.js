@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Step } from '../../components/index';
+import { Step, Modal, showToast, hideToast } from '../../components/index';
 
 import './index.less';
 
@@ -31,6 +31,23 @@ export default class Home extends React.Component {
         };
     }
 
+    test = () => {
+        // Modal.confirm({
+        //     title: '测试',
+        //     children: <div>测试body</div>,
+        //     onOk: () => {
+        //         alert('ok');
+        //     },
+        //     onClose: () => {
+        //         alert('close');
+        //     },
+        // });
+
+        showToast({
+            children: '加载中...'
+        });
+    }
+
     render() {
         const { steps, current } = this.state;
 
@@ -39,6 +56,11 @@ export default class Home extends React.Component {
                 <div className="step-demo">
                     <Step steps={steps} current={current} />
                 </div>
+                <button onClick={this.test}>test</button>
+
+                {/* <Toast icon="loading" show={true}>
+                    正在加载..
+                </Toast> */}
             </div>
         );
     }
