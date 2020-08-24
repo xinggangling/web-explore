@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './app';
+// import App from './app';
 
 class H extends React.Component {
     render() {
@@ -103,17 +103,29 @@ class B extends React.Component {
     }
 }
 
-class A extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            a: 1,
-        };
-    }
-
+class Index extends React.Component {
     render() {
-        return <B />;
+        return (
+            <div>
+
+            </div>
+        )
     }
 }
 
-ReactDOM.render(<A />, document.getElementById('react-root'));
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>h1 title</h1>
+                <article>hello, 0xg!</article>
+                <aside>
+                    <span>span----1</span>
+                    <span>span----2</span>
+                </aside>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<App />, document.getElementById('container'));
