@@ -17,7 +17,7 @@
   "dependencies": {
     "antd": "^4.3.3",
     "classname": "0.0.0",
-    "react": "0.0.0-experimental-94c0244ba",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-94c0244ba",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^5.2.0"
